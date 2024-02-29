@@ -1,0 +1,81 @@
+@import 'main';
+*{
+   margin: 0;padding: 0;
+   box-sizing: border-box;
+  
+}
+nav{
+    box-shadow: none;
+    height:15vh;
+
+}
+.nav-left .logo{
+    width: 100px;
+}
+.nav-links li a{
+    color: black;
+  
+}
+.nav-right .cart span{
+    color: black;
+}
+.nav-right .cart i{
+    color: black;
+
+}
+
+//product container
+.product-container{
+    height: 80%
+}
+.product-container .product-wrap{
+ width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 768px) {
+ grid-template-columns: 1fr;
+  }
+}
+.product-container .product-wrap .left img{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.product-container .product-wrap .right .content-wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+}
+.product-container .product-wrap .right .content-wrapper p{
+    color:$link-color ;
+    line-height:2.4;
+    margin-bottom: 10px;
+}
+.product-container .product-wrap .right .content-wrapper .product-content p{
+ color: $black;
+}
+.product-container .product-wrap .right .content-wrapper .product-content h2{
+    font-size: 2rem;
+    font-weight: 400;
+margin-bottom: 20px;
+   
+}
+
+.product-container .product-wrap .right .content-wrapper .product-content .org-price{
+    font-size: 1.8rem;
+    color: $link-color;
+    text-decoration: line-through;
+}
+.product-container .product-wrap .right .content-wrapper .product-content .new-price{
+    font-size: 1.8rem;
+    color: $black;
+}
+.product-container .product-wrap .right .content-wrapper .product-content button{
+    @extend %btn-style;
+    background-color: $blue;
+    color: $white;
+}
