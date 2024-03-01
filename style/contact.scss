@@ -21,6 +21,12 @@ nav .logo{
  
 }
 
+.nav-left{
+
+    .logo{
+      width: 50px;
+    }
+ }
 
 .container{
     background-color: $product-bg;
@@ -40,6 +46,8 @@ nav .logo{
 .main .main-content-container .main-content{
  display: flex;
     align-items: center;
+
+
  
 }
 .headings{
@@ -48,13 +56,22 @@ nav .logo{
     flex-direction: column;
     text-align: center;
     height: 20vh;
+    @media (max-width: 480px){
+     height: 20vh;
+    }
     // background-color: rebeccapurple;
 }
 .headings h5{
     font-size: 1rem;
+    @media (max-width: 480px){
+      font-size: 0.7rem;
+    }
 }
 .headings h1{
     font-size: 2.5rem;
+    @media (max-width: 480px){
+      font-size: 1.5rem;
+    }
 
 }
 
@@ -87,12 +104,25 @@ nav .logo{
 }
 .service h3{
     font-size: 1.4rem;
+    @media (max-width: 480px){
+       font-size: 1rem;
+       }
 }
 .service h3,p,h5{
     margin-bottom: 10px;
+    @media (max-width: 480px){
+       margin-bottom: 5px;
+       }
 }
-.service h5{
+.services .service p {
+@media (max-width: 480px) {
+    font-size: 15px;
+    line-height: 1;
+}
+}
+.services .service h5{
     color: $blue;
+   font-size: 10px;
 }
 
 //form design
@@ -100,6 +130,7 @@ nav .logo{
 .product-wrap .left{
     height:600px;
     background-color: white;
+
   
 }
 

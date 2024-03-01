@@ -78,6 +78,7 @@ font-weight: 650;
 //navbar//
 nav{
     @extend %align-center;
+    position: relative;
     background-color:transparent; 
     padding: 0.5rem 1rem; 
     width: 100%;
@@ -126,6 +127,8 @@ nav{
     font-size: 1.2rem;
 }
 .nav-right .cart .menu{
+  position: absolute;
+
 display: none;
 @media (max-width: 971px) {
 display: block;
@@ -133,11 +136,21 @@ font-size: 1.2rem;
 cursor: pointer;
 margin-left: 2rem;
 }
+
+@media (max-width: 480px) {
+
+  right: 0;
+  margin-right: 10px;
+     }
 }
 
 .nav-right .cart .theme{
   cursor: pointer;
   padding: 0 10px;
+
+  @media (max-width: 480px) {
+ padding: 0;
+    }
 
 }
 .account-icon{
@@ -200,7 +213,12 @@ nav .logo{
     margin-left: 4rem;
     @media (max-width: 971px) {
       width: 80%;
+ 
     }
+    @media (max-width: 480px) {
+     width: 90%;
+     margin-left: 10px;
+         }
 }
 .main .main-content-container .main-content h1{
     font-size: 4rem;
@@ -223,7 +241,10 @@ nav .logo{
 @extend %btn-style;
 @media (max-width: 470px) {
   padding:8px 30px;
+    margin: 15px 5px 15px 0px;
+    font-size: 10px;
     }
+    
 }
 .main .main-content-container .find{
     background-color: transparent;
@@ -436,6 +457,7 @@ background: url(../img/offer-1.jpg) no-repeat center center/cover;
 
     @media (max-width: 490px) {
       width: 98%;
+      height: 75vh;
     }
     
 }
@@ -469,7 +491,7 @@ background: url(../img/offer-1.jpg) no-repeat center center/cover;
 .exclusive-offer .offer-content h2{
     font-size: 3rem;
     @media (max-width: 490px) {
-     font-size: 2rem;
+     font-size: 1.5rem;
     }
 }
 .exclusive-offer  .subheading{

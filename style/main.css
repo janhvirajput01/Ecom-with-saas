@@ -48,6 +48,7 @@ body {
 }
 
 nav {
+  position: relative;
   background-color: transparent;
   padding: 0.5rem 1rem;
   width: 100%;
@@ -99,6 +100,7 @@ nav {
 }
 
 .nav-right .cart .menu {
+  position: absolute;
   display: none;
 }
 @media (max-width: 971px) {
@@ -109,10 +111,21 @@ nav {
     margin-left: 2rem;
   }
 }
+@media (max-width: 480px) {
+  .nav-right .cart .menu {
+    right: 0;
+    margin-right: 10px;
+  }
+}
 
 .nav-right .cart .theme {
   cursor: pointer;
   padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .nav-right .cart .theme {
+    padding: 0;
+  }
 }
 
 .account-icon {
@@ -175,6 +188,12 @@ nav .logo {
     width: 80%;
   }
 }
+@media (max-width: 480px) {
+  .main .main-content-container .main-content {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
 
 .main .main-content-container .main-content h1 {
   font-size: 4rem;
@@ -204,6 +223,8 @@ nav .logo {
 @media (max-width: 470px) {
   .main .main-content-container button {
     padding: 8px 30px;
+    margin: 15px 5px 15px 0px;
+    font-size: 10px;
   }
 }
 
@@ -414,6 +435,7 @@ nav .logo {
 @media (max-width: 490px) {
   .ex-container {
     width: 98%;
+    height: 75vh;
   }
 }
 
@@ -453,7 +475,7 @@ nav .logo {
 }
 @media (max-width: 490px) {
   .exclusive-offer .offer-content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
