@@ -194,6 +194,9 @@ nav .logo{
     width: 100%;
     background-attachment: fixed;
     height: 90vh;   
+    @media (max-width:480px) {
+      height: 70vh;
+    }
 }
 
 .main .main-content-container{

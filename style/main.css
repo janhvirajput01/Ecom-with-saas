@@ -168,6 +168,11 @@ nav .logo {
   background-attachment: fixed;
   height: 90vh;
 }
+@media (max-width: 480px) {
+  .main {
+    height: 70vh;
+  }
+}
 
 .main .main-content-container {
   flex-direction: column;

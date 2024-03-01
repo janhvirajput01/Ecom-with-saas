@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+.new-theme {
+  color: #af734a;
+}
+.new-theme i {
+  color: goldenrod;
+}
+.new-theme ul li a {
+  color: #cbb98c;
+}
+.new-theme .main h1, .new-theme h3 {
+  color: #cbb98c;
+}
+.new-theme .main-btn .shop {
+  background-color: #cbb98c;
+  color: #ffffff;
+}
+
 body {
   font-family: "lato", sans-serif;
 }
@@ -31,6 +48,7 @@ body {
 }
 
 nav {
+  position: relative;
   background-color: transparent;
   padding: 0.5rem 1rem;
   width: 100%;
@@ -43,11 +61,24 @@ nav {
   width: 60%;
   height: 100%;
 }
+@media (max-width: 971px) {
+  .nav-left {
+    width: 20%;
+  }
+  .nav-left .logo {
+    width: 50px;
+  }
+}
 
 .nav-right {
   justify-content: space-around;
   width: 40%;
   height: 100%;
+}
+@media (max-width: 971px) {
+  .nav-right {
+    width: 70%;
+  }
 }
 
 .nav-right .nav-links {
@@ -69,6 +100,7 @@ nav {
 }
 
 .nav-right .cart .menu {
+  position: absolute;
   display: none;
 }
 @media (max-width: 971px) {
@@ -77,6 +109,22 @@ nav {
     font-size: 1.2rem;
     cursor: pointer;
     margin-left: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .nav-right .cart .menu {
+    right: 0;
+    margin-right: 10px;
+  }
+}
+
+.nav-right .cart .theme {
+  cursor: pointer;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .nav-right .cart .theme {
+    padding: 0;
   }
 }
 
@@ -140,6 +188,12 @@ nav .logo {
     width: 80%;
   }
 }
+@media (max-width: 480px) {
+  .main .main-content-container .main-content {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
 
 .main .main-content-container .main-content h1 {
   font-size: 4rem;
@@ -150,10 +204,28 @@ nav .logo {
     font-size: 3rem;
   }
 }
+@media (max-width: 470px) {
+  .main .main-content-container .main-content h1 {
+    font-size: 2rem;
+  }
+}
 
 .main .main-content-container h3 {
   margin-top: 1rem;
   font-size: 2rem;
+}
+@media (max-width: 470px) {
+  .main .main-content-container h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .main .main-content-container button {
+    padding: 8px 30px;
+    margin: 15px 5px 15px 0px;
+    font-size: 10px;
+  }
 }
 
 .main .main-content-container .find {
@@ -171,11 +243,22 @@ nav .logo {
   height: 100vh;
   margin: 0 auto;
 }
+@media (max-width: 470px) {
+  .brands-slider-container {
+    width: 98%;
+    height: 100%;
+  }
+}
 
 .brands-slider-container .brand-slider {
   justify-content: space-around;
   height: 25vh;
   flex-wrap: wrap;
+}
+@media (max-width: 470px) {
+  .brands-slider-container .brand-slider {
+    height: 200px;
+  }
 }
 
 @media (max-width: 971px) {
@@ -214,6 +297,11 @@ nav .logo {
 @media (max-width: 971px) {
   .offers-container .offer .bg-img {
     height: 30vh;
+  }
+}
+@media (max-width: 490px) {
+  .offers-container .offer .bg-img {
+    height: 500px;
   }
 }
 
@@ -280,6 +368,11 @@ nav .logo {
   font-size: 3rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 490px) {
+  .product-wrap h1 {
+    font-size: 2rem;
+  }
+}
 
 .item {
   width: calc(20% - 20px); /* Adjust width and margin as needed */
@@ -339,6 +432,12 @@ nav .logo {
   height: 60vh;
   margin: 0 auto;
 }
+@media (max-width: 490px) {
+  .ex-container {
+    width: 98%;
+    height: 75vh;
+  }
+}
 
 .exclusive-offer {
   align-items: flex-start;
@@ -355,17 +454,38 @@ nav .logo {
     width: 90%;
   }
 }
+@media (max-width: 490px) {
+  .exclusive-offer {
+    line-height: 1.5;
+  }
+}
 
 .exclusive-offer h4 {
   font-size: 1.2rem;
+}
+@media (max-width: 490px) {
+  .exclusive-offer h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 }
 
 .exclusive-offer .offer-content h2 {
   font-size: 3rem;
 }
+@media (max-width: 490px) {
+  .exclusive-offer .offer-content h2 {
+    font-size: 1.5rem;
+  }
+}
 
 .exclusive-offer .subheading {
   font-size: 1.3rem;
+}
+@media (max-width: 490px) {
+  .exclusive-offer .subheading {
+    font-size: 0.7rem;
+  }
 }
 
 .services-container {
@@ -424,6 +544,11 @@ nav .logo {
   text-align: center;
   font-size: 1.5rem;
   border-bottom: 3px solid #F5F7F9;
+}
+@media (max-width: 490px) {
+  .note {
+    font-size: 1rem;
+  }
 }
 
 footer {
